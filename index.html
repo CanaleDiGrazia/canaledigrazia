@@ -1,137 +1,77 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Canale Di Grazia Incorporated — Product-First Manufacturing</title>
-  <meta name="description" content="Canale Di Grazia Incorporated — FDA-approved cosmetics and household formulation manufacturer. Precision, intention, and performance in every formulation." />
-
-  <style>
-    :root{
-      --ivory: #FAF9F6;
-      --taupe: #CFC6BA;
-      --sage: #AAB7A1;
-      --charcoal: #3A3A3A;
-      --gold: #D6CBB5;
-      --max-width: 1100px;
-      --radius: 12px;
-      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    }
-    html,body{height:100%;background:var(--ivory);color:var(--charcoal);margin:0;}
-    .wrap{max-width:var(--max-width);margin:48px auto;padding:24px;}
-    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
-    .logo{display:flex;align-items:center;gap:12px}
-    .logo .mark{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--taupe),var(--gold));display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--charcoal);}
-    .logo h1{font-family:"Cormorant Garamond",serif;margin:0;font-size:20px;letter-spacing:0.6px}
-    nav a{color:var(--charcoal);text-decoration:none;margin-left:18px;font-size:14px}
-
-    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-top:36px}
-    .hero .left h2{font-family:"Playfair Display", serif;font-size:36px;margin:0 0 12px}
-    .hero .left p{margin:0 0 18px;line-height:1.5;color:#525252}
-    .cta{display:inline-block;padding:12px 18px;border-radius:10px;border:1px solid var(--charcoal);background:transparent;text-decoration:none;color:var(--charcoal);font-weight:600}
-
-    .card{background:white;border-radius:var(--radius);padding:18px;box-shadow:0 6px 20px rgba(58,58,58,0.06);}
-    .stat{display:flex;gap:12px;align-items:center}
-    .stat .num{font-weight:700;font-size:20px}
-
-    section{margin-top:36px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
-
-    footer{margin-top:48px;padding:20px 0;border-top:1px solid rgba(58,58,58,0.06);display:flex;justify-content:space-between;align-items:center}
-
-    .small{font-size:13px;color:#666}
-
-    /* contact form */
-    form{display:flex;flex-direction:column;gap:10px}
-    input[type=text],input[type=email],textarea{padding:12px;border:1px solid rgba(58,58,58,0.12);border-radius:8px;font-size:14px}
-    button[type=submit]{padding:12px;border-radius:8px;border:0;background:var(--charcoal);color:white;font-weight:600}
-
-    /* responsive */
-    @media (max-width:880px){
-      .hero{grid-template-columns:1fr;}
-      nav a{margin-left:10px}
-    }
-  </style>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Home — Canale Di Grazia</title>
+<link rel="icon" href="favicon.svg"/>
+<link rel="stylesheet" href="assets/styles.css"/>
 </head>
 <body>
   <div class="wrap">
     <header>
       <div class="logo">
         <div class="mark">CDG</div>
-        <div>
+        <div class="brand">
           <h1>Canale Di Grazia Incorporated</h1>
           <div class="small">FDA-approved cosmetics & HUHS manufacturing</div>
         </div>
       </div>
-
       <nav>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#quality">Quality</a>
-        <a href="#contact">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="quality.html">Quality</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </header>
 
     <main>
       <div class="hero">
         <div class="left">
+          <span class="eyebrow">Product-first manufacturing</span>
           <h2>Where precision meets thoughtful formulation</h2>
-          <p>Canale Di Grazia Incorporated is an FDA-approved manufacturer specializing in cosmetics and household formulations. We deliver consistent, reliable, and intentional production for brands that value quality.</p>
-          <p><a class="cta" href="#contact">Request a partnership</a></p>
+          <p class="lead">Canale Di Grazia Incorporated is an FDA-approved manufacturer specializing in cosmetics and household formulations. We deliver consistent, reliable, and intentional production for brands that value quality.</p>
+          <p><a class="cta" href="contact.html">Request a partnership</a></p>
 
-          <div style="display:flex;gap:12px;margin-top:16px">
-            <div class="card stat">
-              <div>
-                <div class="num">FDA</div>
-                <div class="small">Licensed</div>
-              </div>
-            </div>
-            <div class="card stat">
-              <div>
-                <div class="num">Cosmetics</div>
-                <div class="small">Formulation & Manufacturing</div>
-              </div>
-            </div>
-            <div class="card stat">
-              <div>
-                <div class="num">HUHS</div>
-                <div class="small">Household Solutions</div>
-              </div>
-            </div>
+          <div class="meta-badges">
+            <div class="badge"><strong>FDA</strong><div class="small">Licensed</div></div>
+            <div class="badge"><strong>Cosmetics</strong><div class="small">Formulation & Manufacturing</div></div>
+            <div class="badge"><strong>HUHS</strong><div class="small">Household Solutions</div></div>
           </div>
         </div>
 
         <aside class="card">
-          <div style="height:260px;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,rgba(170,183,161,0.06),rgba(207,198,186,0.04));border-radius:10px">
-            <div style="text-align:center;color:#6b6b6b">[Hero visual: flowing liquid / glass textures]</div>
+          <div style="height:260px;display:flex;align-items:center;justify-content:center;border-radius:10px;overflow:hidden">
+            <img src="assets/img/hero.svg" alt="hero" style="width:100%;height:100%;object-fit:cover"/>
           </div>
-          <p style="margin-top:14px;color:#5b5b5b;font-size:14px">Intentional formulation. Reliable production. Built for performance.</p>
+          <p style="margin-top:14px;color:var(--muted);font-size:14px">Intentional formulation. Reliable production. Built for performance.</p>
         </aside>
       </div>
 
-      <section id="about">
+      <section id="about" class="fade-up">
         <div class="card">
           <h3 style="margin-top:0">About</h3>
-          <p style="color:#555;line-height:1.6">We are a faceless, product-first manufacturer built to serve brands that demand consistency and integrity. Our focus is on evidence-based ingredients, controlled production environments, and transparent collaboration.</p>
+          <p style="color:var(--muted);line-height:1.6">We are a faceless, product-first manufacturer built to serve brands that demand consistency and integrity. Our process prioritizes evidence-based ingredients, controlled production environments, and collaborative partnerships with brand teams. We focus on formulation performance, stability, and regulatory compliance so our partners can launch with confidence.</p>
         </div>
       </section>
 
-      <section id="services">
+      <section id="services" class="fade-up">
         <h3 style="margin-bottom:10px">Services</h3>
         <div class="grid">
-          <div class="card">
-            <h4 style="margin:0 0 8px">Custom Formulation</h4>
-            <p class="small">Tailored cosmetic and household formulas with stability and performance testing.</p>
-          </div>
-          <div class="card">
-            <h4 style="margin:0 0 8px">Private Label Manufacturing</h4>
-            <p class="small">End-to-end batch production, filling, and quality control for private brands.</p>
-          </div>
-          <div class="card">
-            <h4 style="margin:0 0 8px">Scale & Compliance</h4>
-            <p class="small">Production scaling, regulatory support, and documentation for market-ready launches.</p>
-          </div>
+          <div class="card"><h4>Custom Formulation</h4><p class="small">Tailored cosmetic and household formulas developed to your specifications with stability and performance testing.</p></div>
+          <div class="card"><h4>Private Label Manufacturing</h4><p class="small">End-to-end manufacturing: batching, filling, labeling, and quality control for private brands.</p></div>
+          <div class="card"><h4>Scale & Compliance</h4><p class="small">Production scaling, regulatory support, and documentation to bring market-ready formulations to shelves.</p></div>
         </div>
       </section>
+    </main>
 
-      <section id="quality">
+    <footer>
+      <div class="small">© Canale Di Grazia Incorporated — All rights reserved.</div>
+      <div class="small">Product-first, faceless manufacturer</div>
+    </footer>
+  </div>
+
+  <script src="assets/site.js" defer></script>
+</body>
+</html>
